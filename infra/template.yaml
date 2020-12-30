@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: node-helloworld
+  name: node-helloworld
+  namespace: app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-helloworld
+  template:
+    metadata:
+      labels:
+        app: node-helloworld
+    spec:
+      containers:
+      - image: tingyang/istio-helloworld-nodejs
+        name: istio-helloworld-nodejs
