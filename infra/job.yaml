@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: bash-helloworld
+spec:
+  template:
+    spec:
+      containers:
+      - image: busybox
+        name: bash-helloworld
+        command: ["echo", "hello worlD!"]
+      restartPolicy: Never
