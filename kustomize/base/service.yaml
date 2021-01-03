@@ -4,7 +4,8 @@ metadata:
   name: the-service
 spec:
   selector:
-    deployment: hello
+    matchLabels:
+      deployment: hello
   ports:
   - protocol: TCP
     port: 8666
