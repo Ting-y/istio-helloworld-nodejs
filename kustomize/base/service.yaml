@@ -3,6 +3,7 @@ apiVersion: v1
 metadata:
   name: the-service
 spec:
+  type: ClusterIP
   selector:
     deployment: hello
   ports:
