@@ -8,5 +8,5 @@ spec:
     deployment: hello
   ports:
   - protocol: TCP
-    port: 8666
+    port: 8667
     targetPort: 8080
